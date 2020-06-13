@@ -55,6 +55,6 @@ for name in nodesNameList:
     if name is not nodes['A']['root']:
         out = out+"    "+name+" - "+nodes[name]['nextHop']+";\n"
 out = out + "}"
-f = open("result.txt", "w")
-f.write(out)
-f.close()
+file = open("result.txt", "w")
+file.write(out)
+file.close()
